@@ -2,6 +2,11 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: false },
   ssr: false,
+  vite: {
+    server: {
+      allowedHosts: ['3000-ie2vusa89a1eujhllgj9g-b603c7e4.sg2.manus.computer']
+    }
+  },
   modules: ['@nuxtjs/tailwindcss'],
   tailwindcss: {
     configPath: 'tailwind.config.js'
